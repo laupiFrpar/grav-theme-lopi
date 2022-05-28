@@ -1,0 +1,14 @@
+<div class="card border-0 border-bottom">
+  <div class="card-body">
+    {# Title #}
+    <div class="card-title">
+      {% include 'partials/blog/title.html.twig' with {title_level: 'h5', is_link: true} %}
+    </div>
+    <p class="card-subtitle mt-1">
+      {% include 'partials/blog/date.html.twig' %}
+      {% include 'partials/blog/author.html.twig' %}
+    </p>
+    <p class="card-text">{{ page.summary|raw }}</p>
+    <a href="{{ page.url }}" class="card-link">Lire</a>
+  </div>
+</div>

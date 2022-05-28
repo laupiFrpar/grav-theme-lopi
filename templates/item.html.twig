@@ -1,0 +1,17 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block body %}
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-md-8">
+        {% include 'partials/blog/title.html.twig' %}
+        {% include 'partials/blog/date.html.twig' %}
+        {% include 'partials/blog/author.html.twig' %}
+        {{ page.content|raw }}
+      </div>
+      <div class="col-md-4">
+        {% include 'partials/blog/sidebar.html.twig' %}
+      </div>
+    </div>
+  </div>
+{% endblock %}

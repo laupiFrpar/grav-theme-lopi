@@ -1,0 +1,21 @@
+{% extends 'partials/base.html.twig' %}
+
+{% set blog = page.find(header_var('blog_url')|defined(theme_var('blog-page'))) %}
+{% set collection = page.collection() %}
+
+{% block body %}
+<div class="container">
+  <div class="row g-5">
+    <div class="col-md-8">
+      {% for child in collection %}
+        {% include 'partials/blog/list.html.twig' with {page: child} %}
+      {% endfor %}
+    </div>
+    <div class="col-md-4">
+            <div class="mt-2">
+        {% include 'partials/blog/sidebar.html.twig' %}
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

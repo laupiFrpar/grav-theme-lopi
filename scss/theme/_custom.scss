@@ -1,0 +1,19 @@
+.card-title {
+  a {
+    color: #000;
+    text-decoration: none;
+
+    :hover {
+      color: #000;
+    }
+  }
+}
+
+/**
+ * Le sidebar avec la classe `sticky-md-top` va descendre en même temps que la
+ * page. J'ai défini la propriété top pour permettre d'avoir une marge sur le
+ * haut pour ne pas avoir l'impression que le sidebar est collé au navigateur.
+ */
+.sidebar {
+  top: 1rem;
+}

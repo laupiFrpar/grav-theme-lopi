@@ -1,0 +1,10 @@
+{% set title_level = title_level ?: 'h2' %}
+{% set is_link = is_link | defined(false) %}
+
+<{{title_level}} class="pt-1">
+  {% if is_link %}
+  <a href="{{ page.url }}">{{ page.title }}</a>
+  {% else %}
+  {{ page.title }}
+  {% endif %}
+</{{title_level}}>

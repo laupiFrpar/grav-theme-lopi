@@ -1,0 +1,12 @@
+{
+  "name": "grav-lopi-theme",
+  "version": "0.1.0",
+  "description": "Lopi Theme for Grav CMS",
+  "main": "index.js",
+  "scripts": {
+    "compile": "wt compile scss -b css --source-map=false --style=nested",
+    "watch": "wt watch scss -b css --source-map=false --style=nested"
+  },
+  "author": "Pierre-Louis Launay",
+  "license": "MIT"
+}

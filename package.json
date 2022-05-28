@@ -1,12 +1,33 @@
 {
-  "name": "grav-lopi-theme",
+  "name": "grav-theme-lopi",
   "version": "0.1.0",
   "description": "Lopi Theme for Grav CMS",
   "main": "index.js",
   "scripts": {
-    "compile": "wt compile scss -b css --source-map=false --style=nested",
+    "compile": "wt compile scss -b css --source-map=false --style=compressed",
     "watch": "wt watch scss -b css --source-map=false --style=nested"
   },
-  "author": "Pierre-Louis Launay",
-  "license": "MIT"
+  "author": "Pierre-Louis Launay <lopi@marinlaunay.fr>",
+  "license": "MIT",
+  "devDependencies": {
+    "@html-eslint/eslint-plugin": "^0.13.1",
+    "@html-eslint/parser": "^0.13.1",
+    "eslint": "^8.16.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-html": "^6.2.0",
+    "eslint-plugin-import": "^2.26.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/laupiFrpar/grav-theme-lopi.git"
+  },
+  "keywords": [
+    "sass",
+    "front-end",
+    "bootstrap"
+  ],
+  "bugs": {
+    "url": "https://github.com/laupiFrpar/grav-theme-lopi/issues"
+  },
+  "homepage": "https://github.com/laupiFrpar/grav-theme-lopi#readme"
 }

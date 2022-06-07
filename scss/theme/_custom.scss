@@ -17,3 +17,29 @@
 .sidebar {
   top: 1rem;
 }
+
+@import url('https://fonts.googleapis.com/css?family=Special+Elite');
+
+// Inspiré de https: //codepen.io/JoeHastings/pen/MOdRVm
+blockquote {
+  font-family: 'Special Elite', cursive;
+  background: #fffdf5;
+  color: #3f3f5a;
+  font-size: 1.1rem;
+  max-width: 750px;
+  line-height: 1.4;
+  position: relative;
+  margin: 0 auto;
+  padding: .5rem;
+  padding-left: 2rem;
+
+  cite {
+    line-height: 3;
+    text-align: left;
+
+    &:before {
+      content: "—";
+      padding-right: 1rem;
+    }
+  }
+}

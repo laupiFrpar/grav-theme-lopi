@@ -5,17 +5,17 @@
   "main": "index.js",
   "scripts": {
     "compile": "wt compile scss -b css --source-map=false --style=compressed",
-    "watch": "wt watch scss -b css --source-map=false --style=nested"
+    "watch": "wt watch scss -b css --source-map=false --style=nested",
+    "lint-style": "stylelint 'scss/*.scss'"
   },
   "author": "Pierre-Louis Launay <lopi@marinlaunay.fr>",
   "license": "MIT",
   "devDependencies": {
-    "@html-eslint/eslint-plugin": "^0.13.1",
-    "@html-eslint/parser": "^0.13.1",
     "eslint": "^8.16.0",
     "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-plugin-html": "^6.2.0",
-    "eslint-plugin-import": "^2.26.0"
+    "eslint-plugin-import": "^2.26.0",
+    "stylelint": "^14.8.5",
+    "stylelint-config-standard-scss": "^4.0.0"
   },
   "repository": {
     "type": "git",

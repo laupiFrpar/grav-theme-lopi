@@ -42,7 +42,7 @@
     {% block footer %}{% endblock %}
 
     {% block javascripts %}
-      {# {% do assets.addJs('jquery', 100) %} #}
+      {{ assets.js()|raw }}
     {% endblock %}
   </body>
 </html>

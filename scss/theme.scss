@@ -1,6 +1,11 @@
 @import "theme/variable";
-@import "fontawesome/fontawesome";
-@import "fontawesome/solid";
-@import "fontawesome/brands";
-// @import "theme/table";
+
+// Bootstrap
+@import "vendor/bootstrap";
+
+// Font awesome
+@import "vendor/fontawesome/fontawesome";
+@import "vendor/fontawesome/solid";
+@import "vendor/fontawesome/brands";
+@import "theme/table";
 @import "theme/custom";

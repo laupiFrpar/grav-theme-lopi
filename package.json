@@ -4,13 +4,15 @@
   "description": "Lopi Theme for Grav CMS",
   "main": "index.js",
   "scripts": {
+    "copy-bootstrap-js": "cp node_modules/bootstrap/dist/js/bootstrap.min.js js/bootstrap.min.js",
     "compile": "wt compile scss -b css --source-map=false --style=compressed",
-    "watch": "wt watch scss -b css --source-map=false --style=nested",
-    "lint-style": "stylelint 'scss/*.scss'"
+    "lint-style": "stylelint 'scss/*.scss'",
+    "watch": "wt watch scss scss/vendor -b css --source-map=false --style=nested"
   },
   "author": "Pierre-Louis Launay <lopi@marinlaunay.fr>",
   "license": "MIT",
   "devDependencies": {
+    "bootstrap": "^5.2.0-beta1",
     "eslint": "^8.16.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.26.0",

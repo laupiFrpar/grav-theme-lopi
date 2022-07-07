@@ -42,6 +42,7 @@
     {% block footer %}{% endblock %}
 
     {% block javascripts %}
+      {% do assets.addJs('theme://js/bootstrap.min.js') %}
       {{ assets.js()|raw }}
     {% endblock %}
   </body>

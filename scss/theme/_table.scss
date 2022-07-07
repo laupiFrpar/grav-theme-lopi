@@ -1,0 +1,27 @@
+table {
+  width: 100%;
+
+  thead {
+    th {
+      border-bottom: $table-border-width $table-border-color solid;
+      padding: 0.5rem;
+    }
+  }
+
+  tbody {
+    tr {
+      &:nth-of-type(#{$table-striped-order}) > * {
+        background-color: $table-striped-bg;
+      }
+
+      &:hover {
+        background-color: $table-hover-bg;
+      }
+    }
+
+    td {
+      border-bottom: $table-border-width $table-border-color solid;
+      padding: 0.5rem;
+    }
+  }
+}
